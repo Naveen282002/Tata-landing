@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin-top: 1px;
+}
+nav{
+    height: 90px;
+    width: 100%;
+    box-shadow: 0px 3px 5px gray;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 100px;
+}
+nav .nav-items{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+nav .nav-items a{
+    text-decoration: none;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 600;
+    color: black;
+}
+nav a::before{
+    content: "";
+    height: 3px;
+    width: 0px;
+    display:inline-block;    
+    background-color: black;
+    position: relative;
+    top: 30px;
+    border-radius: 50px;
+}
+nav a:hover::before{
+    width: 100%;
+    transition: all .3s linear;
+}
+nav .navicon{
+    display: flex;
+    gap: 30px;
+    margin-right: 20px;
+}
+.contact{
+    height: 65px;
+    width: 100%;
+    background-color: darkslategray;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    z-index: 100;
+    box-shadow: -1px -1px -10px black;
+    .call, .test-drive{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    svg{
+        animation: zoom-up 1s linear infinite alternate;
+    }
+}
+@keyframes zoom-up {
+    to{
+        transform: scale(1.2);
+    }
+}
+.primary-link{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    color: white;
+    text-decoration: none;
+}
+
+/* home */
+.home{
+    height: 100vh;
+    width: 100%;
+    background:linear-gradient(90deg,white 600px,goldenrod );
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        p{
+            width: 80%;
+            text-align: center;
+        }
+        .right-text{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+        }
+}    
+.primary-para{
+    font-family: "noto sans",sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+
+}
+.primary-head{
+    font-family: "noto sans",sans-serif;
+    font-weight: 600;
+    font-size: 4rem;
+}
+
+/* <!-- price section --> */
+.section-price{
+    height: 55vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    .price-left{
+        height: 100%;
+        width: 50%;
+        background-color: aqua;
+        .loc{
+            height: 10%;
+            width: 70%;
+            background-color: rgb(240, 240, 235);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 180px;
+            border-bottom: 2px solid;
+            p{
+
+            }
+
+
+        }
+
+    }
+    .price-right{
+
+    }
+}
